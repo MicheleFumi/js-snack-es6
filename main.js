@@ -22,7 +22,15 @@ const bici = [
         nome: 'Graziella', peso: 10 
     }
 ];
-   console.log(bici[2]);
+
+let bici_leggera=bici[0];
+
+for (let i = 0; i < bici.length; i++) {
+    if (bici[i].peso < bici_leggera.peso ){
+        bici_leggera =bici[i]
+    }
+   }
+   console.log(bici_leggera)
      
 
 
