@@ -60,13 +60,17 @@ const squadre = [
     }
 ];
 
-const punti_fatti= Math.random() * 10
-const falli_subiti= Math.random() * 10
+
 for (let i = 0; i < squadre.length; i++) {
-    const falli_random = squadre[0] ;
-    console.log(falli_random);
+    squadre[i].punti_fatti = Math.random() * 10 ;
+    squadre[i].falli_subiti =  Math.random() * 10 ;
+
 }
 
+console.log(squadre[i].punti_fatti);
+
+
+;
 
 /* Snack 3 (Bonus)
 Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).
