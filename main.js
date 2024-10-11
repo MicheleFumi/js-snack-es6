@@ -22,7 +22,7 @@ const bici = [
         nome: 'Graziella', peso: 10 
     }
 ];
-   console.log(bici[0]);
+   console.log(bici[2]);
      
 
 
