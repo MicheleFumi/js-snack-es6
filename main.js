@@ -60,18 +60,40 @@ const squadre = [
     }
 ];
 
+const falli_squadre=[]
 
 for (let i = 0; i < squadre.length; i++) {
-    squadre[i].punti_fatti = Math.random() * 10 ;
-    squadre[i].falli_subiti =  Math.random() * 10 ;
+   
+    
+    squadre[i].punti_fatti = Math.floor(Math.random() * 10)
+    squadre[i].falli_subiti = Math.floor(Math.random() * 10)
+
+    falli_squadre.push(squadre[i].nome, squadre[i].falli_subiti)
+
 
 }
+ 
+console.log(squadre);
+console.log(falli_squadre);
 
-console.log(squadre[i].punti_fatti);
 
 
-;
+
+
 
 /* Snack 3 (Bonus)
 Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).
 La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri. */
+
+
+const array=[13,45,66,27,39,64,23,12,40]
+const new_array=[];
+function between(array, a, b) {
+    for (let i = a; i <= b; i++) {
+         new_array.push(array[i]) ;
+    
+    }
+    return new_array
+}
+
+console.log(between(array, 3, 6));
